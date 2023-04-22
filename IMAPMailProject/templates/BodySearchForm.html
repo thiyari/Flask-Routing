@@ -1,0 +1,24 @@
+{% include 'directives/header.html' %}
+{% include 'directives/container.html' %}
+{% block content %}
+<div id="listData">
+<div class="container">
+<br><br>
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+<form method="post">
+  <div class="form-group">
+        <div class="form-floating">
+            <div class="row align-items-center g-3">
+                    <div class="col-auto">
+                      <input type="text" name="body" class="form-control" id="floatingInput" placeholder="Enter The Keyword" required>
+                    </div>
+                      <div class="col-auto">
+                    <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+{% endblock %}

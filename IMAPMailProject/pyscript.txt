@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="static/css/pyscript.css" />
+<script defer src="static/js/pyscript.js"></script>
+<py-script>
+</py-script>
+
+<link rel="stylesheet" href="{% static 'IMAPMailsProcessing/css/pyscript.css' %}"/>
+<script defer src="{% static 'IMAPMailsProcessing/js/pyscript.js' %}"></script>
+<py-script>
+</py-script>

@@ -1,0 +1,44 @@
+{% include 'directives/header.html' %}
+{% include 'directives/container.html' %}
+{% block content %}
+<html>
+<head>
+</head>
+<body>
+<div id="listData">
+<div class="container">
+<br>
+<h1>Retrieving Your Mails</h1>
+</div>
+<table class="table table-light table-hover">
+        <thead>
+        <tr>
+            <th>From</th>
+            <th>Subject</th>
+            <th>Message</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="content-div" width="20%">
+                <span class="column">
+                    {{mail_from}}
+            </span>
+            </td>
+            <td class="content-div" width="70%">
+                <span class="column">
+                    {{mail_subjec}}
+                </span>
+            </td>
+            <td class="content-div" width="10%">
+                <span class="date">
+                    {{mail_content}}
+                </span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+{% endblock %}
